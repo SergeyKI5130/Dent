@@ -80,7 +80,7 @@ let slider_rew = new Swiper('.rew-page__row', {
 	centeredSlides: true,
 	speed: 1000,
 	loop: true,
-	lazy: true,
+	//lazy: true,
 	// Dotts
 	pagination: {
 		el: '.rew-page__paggin',

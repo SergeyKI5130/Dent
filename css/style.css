@@ -1278,7 +1278,7 @@ body.ie ._ibg img {
 
 .menu__list li {
   text-align: center;
-  margin: 0px 0px 25px 0px;
+  margin: 0px 0px 30px 0px;
 }
 
 .menu__list li:last-child {
@@ -1563,7 +1563,7 @@ body.ie ._ibg img {
 }
 
 .page__blog {
-  padding: 80px 0;
+  padding: 80px 0 40px 0;
 }
 
 .page__dep {
@@ -1622,9 +1622,25 @@ body.ie ._ibg img {
 }
 
 .promo-page__title {
+  position: relative;
   font-size: 25px;
   color: #0096FF;
   margin: 0px 0px 15px 0px;
+}
+
+.promo-page__title::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url("../img/icons/teeth.svg") center no-repeat;
+  background-size: 40px;
+  top: -250%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
 }
 
 .promo-page__subtitle {
@@ -2623,6 +2639,10 @@ body.ie ._ibg img {
     margin: 0px 20px 0px 0px;
   }
 
+  .best-page {
+    background: #F0F6FB;
+  }
+
   .best-page__column:first-child {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 70%;
@@ -2702,7 +2722,7 @@ body.ie ._ibg img {
   }
 
   .menu__link {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .social__list {
@@ -2771,17 +2791,19 @@ body.ie ._ibg img {
   }
 
   .footer__column {
-    max-width: 300px;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0px 0px 40px 0px;
   }
 
   .footer__column:first-child {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
   }
 
   .page__promo {
-    padding: 70px 0;
+    padding: 90px 0 70px 0;
   }
 
   .promo-page::before {
@@ -2799,6 +2821,10 @@ body.ie ._ibg img {
 
   .promo-page__title {
     margin: 0px 0px 20px 0px;
+  }
+
+  .promo-page__title::before {
+    display: block;
   }
 
   .promo-page__subtitle {
@@ -2847,10 +2873,16 @@ body.ie ._ibg img {
     text-align: center;
   }
 
+  .products-page__row {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
+  }
+
   .products-page__column {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 48%;
-            flex: 0 1 48%;
+        -ms-flex: 0 1 47%;
+            flex: 0 1 47%;
   }
 
   .products-column__descr {
@@ -2879,10 +2911,6 @@ body.ie ._ibg img {
     -webkit-transform: scale(-1, 1);
         -ms-transform: scale(-1, 1);
             transform: scale(-1, 1);
-  }
-
-  .best-page {
-    background: #F0F6FB;
   }
 
   .best-page__column:last-child {
@@ -2927,6 +2955,7 @@ body.ie ._ibg img {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
+    padding: 0 10px;
   }
 
   .news-page__image {
@@ -2992,6 +3021,18 @@ body.ie ._ibg img {
             flex: 1 1 100%;
   }
 
+  .swiper-slide {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+
+  .swiper-slide-active {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+
   .title {
     font-size: 25px;
     line-height: 30px;
@@ -3002,8 +3043,56 @@ body.ie ._ibg img {
     line-height: 30px;
   }
 
-  .footer__row {
-    padding: 0 20px;
+  .page__phone {
+    padding: 40px 0px;
+  }
+
+  .page__services {
+    padding: 40px 0px;
+  }
+
+  .page__products {
+    padding: 40px 0px;
+  }
+
+  .page__spec {
+    padding: 40px 0 0 0;
+  }
+
+  .page__rew {
+    padding: 40px 0px;
+  }
+
+  .page__blog {
+    padding: 40px 0px;
+  }
+
+  .page__dep {
+    padding: 40px 0px;
+  }
+
+  .page__title {
+    padding: 20px 0px;
+  }
+
+  .page__about {
+    padding: 40px 0px;
+  }
+
+  .page__best {
+    padding: 40px 0px;
+  }
+
+  .page__doctors {
+    padding: 40px 0px;
+  }
+
+  .page__contacts {
+    padding: 40px 0px;
+  }
+
+  .page__form {
+    padding: 40px 0px;
   }
 
   .promo-page__column {
@@ -3032,6 +3121,7 @@ body.ie ._ibg img {
 
   .products-page__row {
     margin: 0px 0px 40px 0px;
+    padding: 0 20px;
   }
 
   .products-page__column {
@@ -3052,6 +3142,7 @@ body.ie ._ibg img {
   .products-column__descr {
     height: 60px;
     font-size: 14px;
+    margin: 0px 0px 20px 0px;
   }
 
   .spec-page__row {
@@ -3064,6 +3155,23 @@ body.ie ._ibg img {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 80%;
             flex: 0 0 80%;
+    margin: 0px 0px 40px 0px;
+  }
+
+  .rew-page__row {
+    padding: 20px;
+  }
+
+  .about-page__row {
+    padding: 0 20px;
+  }
+
+  .best-page__row {
+    padding: 0 20px;
+  }
+
+  .dep-page__row {
+    padding: 0 20px;
   }
 
   .form-page__form {
